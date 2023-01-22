@@ -1,3 +1,9 @@
+.clerafix{
+content:'';
+display:block;
+clear:both;
+}
+
 body {
 margin: 0;
 padding: 0;
@@ -52,5 +58,33 @@ main {
     text-align: center;
     font-size: 100px;
     font-family: 'Dancing Script';
+}
+
+.section{
+    height: 100vh;
+    width: 100vw;
+    background-color: aqua;
+}
+
+.about{
+    width: 80%;
+    margin: auto;
+}
+
+.about-title{
+
+}
+
+.about-text{
+
+}
+
+.about-content{
+
+}
+
+.about-image img{
+    height: 60%;
+    width: 100%;
 }
 
