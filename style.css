@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+
 .clearfix::after {
     content: '';
     display: block;
@@ -85,7 +86,7 @@ main {
 
 .section-title {
     text-align: center;
-    font-family: Unbounded;
+    font-family: 'PT Serif', serif;
     font-size: 20px;
 }
 
@@ -94,6 +95,7 @@ main {
 .section-content {
     text-align: center;
     margin: 10px 0 10px 0;
+    font-family: 'Arvo', serif;
 }
 
 .about-image {
@@ -159,10 +161,20 @@ main {
 
 
 
+
 .opinion span {
     width: 100%;
-
 }
 
 
 
+.section-links div {
+    text-align: left;
+    padding-bottom: 10px;
+
+}
+
+.section-links i {
+    font-size: 20px;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}
