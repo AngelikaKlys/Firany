@@ -9,16 +9,21 @@
     clear: both;
 }
 
-body {
-    margin: 0;
-    padding: 0;
+
+
+main {
+    width: 100vw;
 }
 
-main {}
+@media (min-width: 1024px) {
+    main {
+        width: calc(100vw - 15px);
+    }
+}
 
 .page-title-container {
-    background-image: url(image/header-3.jpg);
-    height: 100vh;
+    background-image: url(image/pexels-tamanna-rumee-10116216.jpg);
+    height: 100%;
     background-size: cover;
     background-position: 50%;
 }
@@ -28,7 +33,7 @@ main {}
     background-color: rgba(255, 255, 255, 0.5);
     position: absolute;
     bottom: 50px;
-    width: calc(100vw - 20px);
+    width: calc(100% - 20px);
     left: 10px;
     border-radius: 10px;
 }
@@ -51,8 +56,6 @@ main {}
 
 .name {
     height: 50%;
-
-
 }
 
 .name h1 {
@@ -65,7 +68,7 @@ main {}
 
 .section {
     padding: 40px 0 40px 0;
-    width: 100vw;
+    width: 100%;
 }
 
 .section:nth-child(2n+1) {
@@ -75,6 +78,9 @@ main {}
 .section-container {
     width: 80%;
     margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .section-title {
@@ -96,20 +102,22 @@ main {}
 }
 
 .about-image img {
-    height: 60%;
+    height: 100%;
     width: 100%;
     object-fit: cover;
     border-radius: 10px;
 }
 
 .gallery {
-    margin: -10px;
     height: 400px;
+    display: flex;
+    justify-content: space-between;
 }
+
+.gallery-text {}
 
 .gallery-img {
     width: 100%;
-    padding-bottom: 20px;
 }
 
 .gallery-img img {
@@ -121,20 +129,21 @@ main {}
 }
 
 .gallery-column {
-    float: left;
-    width: calc(50% - 20px);
-    padding: 10px;
-    height: calc(100% - 20px);
+    display: flex;
+    width: calc(50% - 10px);
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .gallery-column:first-child .gallery-img:first-child,
 .gallery-column:last-child .gallery-img:last-child {
-    height: 60%;
+    height: calc(60% - 10px);
 }
 
 .gallery-column:first-child .gallery-img:last-child,
 .gallery-column:last-child .gallery-img:first-child {
-    height: 40%;
+    height: calc(40% - 10px);
 }
 
 .opinions {}
@@ -144,20 +153,16 @@ main {}
     margin: 30px auto 30px auto;
     padding: 10px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: row;
 }
 
-.icon {
-    width: 20%;
-    float: left;
-}
 
-.icon i {
-    font-size: 50px;
-    vertical-align: text-top;
-}
 
 .opinion span {
-    float: left;
-    width: 80%;
-    
+    width: 100%;
+
 }
+
+
+
