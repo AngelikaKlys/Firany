@@ -4,7 +4,10 @@
     <!-- <link href=' https://fonts.googleapis.com/css?family=Dancing Script|Unbounded' rel='stylesheet' type='text/css'> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=PT+Serif:ital@1&display=swap"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Dancing+Script&family=PT+Serif:ital@1&display=swap"
         rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,17 +18,19 @@
     <link href="assets/fontawesome/css/fontawesome.css" rel="stylesheet">
     <link href="assets/fontawesome/css/brands.css" rel="stylesheet">
     <link href="assets/fontawesome/css/solid.css" rel="stylesheet">
+
+    <script src="script.js"></script>
 </head>
 
 <body>
-    <!-- <header>
+    <header>
         <div class="menu">
-            <div class="menu-link">O mnie</div>
-            <div class="menu-link">Galeria zdjęć</div>
-            <div class="menu-link">Opinie klientów</div>
-            <div class="menu-link">Jak zamówić</div>
+            <a target-section="about">O mnie</a>
+            <a target-section="gallery">Galeria zdjęć</a>
+            <a target-section="opinions">Opinie klientów</a>
+            <a target-section="how-to">Jak zamówić</a>
         </div>
-    </header> -->
+    </header>
 
     <main>
         <!-- HOME -->
@@ -41,7 +46,7 @@
         </div>
 
         <!-- o mnie -->
-        <div class="section">
+        <div class="section" id="about">
             <div class="section-container">
                 <div class="about-text">
                     <div class="section-title">
@@ -65,7 +70,7 @@
         </div>
 
         <!-- galeria zdjęć -->
-        <div class="section">
+        <div class="section" id="gallery">
             <div class="section-container">
                 <div class="gallery-text">
                     <div class="section-title">
@@ -100,7 +105,7 @@
         </div>
 
         <!-- opinie klientów -->
-        <div class="section">
+        <div class="section" id="opinions">
             <div class="section-container">
                 <div>
                     <div class="section-title">
@@ -126,7 +131,7 @@
         </div>
 
         <!-- jak zamówić -->
-        <div class="section">
+        <div class="section" id="how-to">
             <div class="section-container">
                 <div>
                     <div class="section-title">
